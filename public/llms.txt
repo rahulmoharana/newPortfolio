@@ -1,0 +1,24 @@
+# Rahul Moharana
+
+Rahul Moharana is a Full Stack Developer and Creative Engineer based in Cuttack, India. He specializes in building high-performance web applications, creative digital experiences, and scalable backend systems.
+
+## Primary Skills
+- **Languages:** JavaScript (ES6+), C, Java
+- **Frontend:** React, Next.js, React Native, Framer Motion, GSAP, Three.js, Tailwind CSS
+- **Backend:** Node.js, Express
+- **Databases:** MongoDB, PostgreSQL
+- **Tools & DevOps:** Figma, Git, Vercel, AWS, Docker
+
+## Key Projects
+- **Velix Agency Portal:** A premium, high-end agency website with cinematic animations and performance optimizations.
+- **Marion Construction:** A professional multi-page portal for a construction business with project showcases.
+- **Portfolio Website:** A high-performance, GSAP-powered portfolio demonstrating creative engineering and full-stack capabilities.
+
+## Contact & Links
+- **Website:** https://rahulmoharana.dev
+- **GitHub:** https://github.com/rahulmoharana
+- **LinkedIn:** https://linkedin.com/in/rahulmoharana
+- **Email:** contact@rahulmoharana.dev
+
+## Availability
+Rahul is currently available for full-stack development roles, freelance projects, and creative collaborations.

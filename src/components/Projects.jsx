@@ -45,7 +45,7 @@ const PROJECTS = [
     category: "FRONTEND CLONE",
     bgColor: "#0d0d0d",
     image: img3,
-    liveUrl: "https://rahulmoharana.github.io/sundown-clone/",
+    liveUrl: "https://sundown-clone-kappa.vercel.app/",
     githubUrl: "https://github.com/rahulmoharana/sundown-clone"
   },
   {
@@ -58,7 +58,7 @@ const PROJECTS = [
     category: "FRONTEND CLONE",
     bgColor: "#1a1a1a",
     image: img4,
-    liveUrl: "https://rahulmoharana.github.io/two-good-co-clone/",
+    liveUrl: "https://two-good-co-clone-phi.vercel.app/",
     githubUrl: "https://github.com/rahulmoharana/two-good-co-clone"
   }
 ]
@@ -206,7 +206,7 @@ const Projects = () => {
           className="flex h-full w-fit"
         >
           {PROJECTS.map((project, index) => (
-          <div 
+          <article 
             key={project.id}
             className="project-slide relative w-screen h-full flex items-center px-6 md:px-16 lg:px-24 overflow-hidden"
           >
@@ -215,7 +215,7 @@ const Projects = () => {
               <img 
                 ref={el => imageRefs.current[index] = el}
                 src={project.image} 
-                alt={project.title}
+                alt={`${project.title} - ${project.subtitle}`}
                 className="w-full h-full object-cover"
               />
               {/* Refined Overlays for Readability */}
@@ -307,7 +307,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </article>
           ))}
         </div>
       )}

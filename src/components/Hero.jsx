@@ -359,12 +359,13 @@ const Hero = () => {
             hide()
           }
         }}
+        aria-label="Welcome section featuring Rahul Moharana, Full Stack Developer"
       >
         {/* L0 — background image */}
         <img
          
           src={bgImage}
-          alt=""
+          alt="Abstract dark background with warm orange accents"
           draggable={false}
           className="absolute inset-0 h-full w-full select-none object-cover"
         />
@@ -401,7 +402,7 @@ const Hero = () => {
         <img
           src={maskImage}
           ref={bgImageRef}
-          alt=""
+          alt="Creative developer mask reveal background"
           draggable={false}
           className="absolute inset-0 h-full w-full select-none object-cover hidden md:block"
           style={revealStyle}
@@ -422,18 +423,18 @@ const Hero = () => {
         {/* Hero heading — opacity controlled by GSAP, not Tailwind */}
         <div className="absolute top-[42%] left-4 sm:left-6 md:left-16 lg:left-24 -translate-y-1/2 z-30 pointer-events-none">
           <div className="overflow-hidden">
-            <h2 className="hero-word font-anton text-[14vw] sm:text-[12vw] md:text-[8vw] leading-[0.95] text-[#EAD7CC] uppercase select-none"
+            <h1 className="hero-word font-anton text-[14vw] sm:text-[12vw] md:text-[8vw] leading-[0.95] text-[#EAD7CC] uppercase select-none"
               style={{ opacity: 0 }} // GSAP will animate this to 1
             >
               Full Stack
-            </h2>
+            </h1>
           </div>
           <div className="overflow-hidden">
-            <h2 className="hero-word font-anton text-[14vw] sm:text-[12vw] md:text-[8vw] leading-[0.95] text-[#EAD7CC] uppercase select-none"
+            <h1 className="hero-word font-anton text-[14vw] sm:text-[12vw] md:text-[8vw] leading-[0.95] text-[#EAD7CC] uppercase select-none"
               style={{ opacity: 0 }} // GSAP will animate this to 1
             >
               Developer
-            </h2>
+            </h1>
           </div>
         </div>
       </section>

@@ -103,9 +103,9 @@ const Footer = () => {
           ref={brandingRef}
           className="w-full flex justify-center overflow-hidden"
         >
-          <h1 className="font-anton text-[12vw] leading-none text-[#EAD7CC] uppercase select-none opacity-100 whitespace-nowrap">
+          <h2 className="font-anton text-[12vw] leading-none text-[#EAD7CC] uppercase select-none opacity-100 whitespace-nowrap">
             RAHUL MOHARANA
-          </h1>
+          </h2>
         </div>
         
         {/* Star Icon (from screenshot style) */}
