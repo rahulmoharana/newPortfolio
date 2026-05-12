@@ -15,10 +15,10 @@ Rahul Moharana is a Full Stack Developer and Creative Engineer based in Cuttack,
 - **Portfolio Website:** A high-performance, GSAP-powered portfolio demonstrating creative engineering and full-stack capabilities.
 
 ## Contact & Links
-- **Website:** https://rahulmoharana.dev
+- **Website:** https://rahulmoharana.me
 - **GitHub:** https://github.com/rahulmoharana
 - **LinkedIn:** https://linkedin.com/in/rahulmoharana
-- **Email:** contact@rahulmoharana.dev
+- **Email:** dev.rahulmoharana@gmail.com
 
 ## Availability
 Rahul is currently available for full-stack development roles, freelance projects, and creative collaborations.

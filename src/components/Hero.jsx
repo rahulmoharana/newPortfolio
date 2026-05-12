@@ -3,8 +3,8 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 import * as THREE from 'three'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import bgImage from '../assets/backgorund.png'
-import maskImage from '../assets/mask.png'
+import bgImage from '../assets/background.webp'
+import maskImage from '../assets/mask.webp'
 
 gsap.registerPlugin(ScrollTrigger)
 
