@@ -1,8 +1,8 @@
 import React from 'react'
-import quickAiImg from '../assets/1-QuickAi.png'
-import splytImg from '../assets/2-Splyt.png'
-import sundownImg from '../assets/3-Sundown.png'
-import twoFoodImg from '../assets/4-twofoodco.png'
+import quickAiImg from '../assets/1-QuickAi.webp'
+import splytImg from '../assets/2-Splyt.webp'
+import sundownImg from '../assets/3-Sundown.webp'
+import twoFoodImg from '../assets/4-twofoodco.webp'
 
 const PROJECT_HEADLINE = [
   { word: 'WHERE', isAccent: false, weight: 'font-[100]' },

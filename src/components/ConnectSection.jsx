@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import portraitImg from '../assets/about.png'
+import portraitImg from '../assets/about.webp'
 
 gsap.registerPlugin(ScrollTrigger)
 

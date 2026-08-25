@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import aboutMeImg from '../assets/about.png'
-import signatureImg from '../assets/signature.png'
+import aboutMeImg from '../assets/about.webp'
+import signatureImg from '../assets/signature.webp'
 
 gsap.registerPlugin(ScrollTrigger)
 

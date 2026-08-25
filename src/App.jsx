@@ -4,12 +4,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
 
-import bgImage from './assets/mask.png'
-import logoImg from './assets/logo.png'
-import aboutImg from './assets/aboutus.png'
-import aboutMeImg from './assets/about.png'
-import chapter2Img from './assets/chapter2.png'
-import signatureImg from './assets/signature.png'
+import bgImage from './assets/mask.webp'
+import logoImg from './assets/logo.webp'
+import aboutImg from './assets/aboutus.webp'
+import aboutMeImg from './assets/about.webp'
+import chapter2Img from './assets/chapter2.webp'
+import signatureImg from './assets/signature.webp'
 import vibeSong from './assets/Luz Roja.mp3'
 import Button from './components/Button'
 import SkillsMarquee from './components/SkillsMarquee'
@@ -1214,18 +1214,18 @@ const App = () => {
 
       <div
         ref={bgRef}
-        className="fixed inset-0 z-0 pointer-events-none will-change-transform flex items-center justify-center lg:justify-end lg:pr-[8vw] xl:pr-[12vw]"
+        className="fixed inset-0 z-0 pointer-events-none will-change-transform flex items-center justify-end overflow-hidden lg:overflow-visible pr-0 sm:pr-4 lg:pr-[6vw] xl:pr-[9vw]"
       >
-        <div className="relative h-full flex items-center justify-center overflow-visible">
+        <div className="relative h-full flex items-center justify-end overflow-visible">
           <img
             src={bgImage}
             alt="Rahul Moharana"
-            className="h-[60vh] sm:h-[66vh] md:h-[70vh] lg:h-[76vh] xl:h-[80vh] w-auto max-w-[85vw] object-contain select-none opacity-90 filter contrast-[1.05] brightness-95"
+            className="h-[84vh] sm:h-[86vh] md:h-[88vh] lg:h-[92vh] xl:h-[95vh] 2xl:h-[96vh] w-auto max-w-none object-contain object-right select-none opacity-90 filter contrast-[1.05] brightness-95 translate-x-[28%] sm:translate-x-0"
             style={{
               maskImage:
-                'radial-gradient(ellipse 70% 70% at 50% 50%, black 50%, transparent 98%)',
+                'radial-gradient(ellipse 80% 80% at 50% 50%, black 55%, transparent 98%)',
               WebkitMaskImage:
-                'radial-gradient(ellipse 70% 70% at 50% 50%, black 50%, transparent 98%)',
+                'radial-gradient(ellipse 80% 80% at 50% 50%, black 55%, transparent 98%)',
             }}
           />
 
