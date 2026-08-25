@@ -1,13 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap');
-
 @import "tailwindcss";
 
 :root {
-  --color-cream: #EAD7CC;
-  --color-orange-red: #FF4D00;
-  --color-black: #000000;
+  --color-bg: #000000;
+  --color-text: #FFFFFF;
 }
 
 html,
@@ -16,37 +11,153 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
-  background-color: var(--color-black);
-  color: #FFFFFF;
-  scrollbar-width: none;/* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* Chrome, Safari and Opera */
-/* body::-webkit-scrollbar {
-  display: none;
-} */
+/* Prevent horizontal overflow on all wrappers */
+#root {
+  overflow-x: hidden;
+  width: 100%;
+}
 
-.font-anton {
-  font-family: 'Anton', sans-serif;
+/* Faster taps on mobile — remove 300ms delay */
+button,
+a,
+[role="button"] {
+  touch-action: manipulation;
+}
+
+html,
+body,
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-jost {
+  font-family: 'Jost', sans-serif;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-tenor {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+.font-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Taste typography & architectural hairline styling */
+.text-hairline {
   font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.font-datatype {
-  font-family: 'Datatype', sans-serif;
+.architectural-slats {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 8px,
+    transparent 8px,
+    transparent 24px
+  );
 }
 
-html.lenis,
-html.lenis body {
-	height: auto;
+/* Vertical text for about section name */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
-.lenis.lenis-smooth {
-	scroll-behavior: auto !important;
+/* Custom z-index between overlay (z-20) and headline (z-30) */
+.z-25 {
+  z-index: 25;
 }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-	overscroll-behavior: contain;
+/* Synchronized continuous glass shine INSIDE text letters with slower, luxurious duration */
+@keyframes charGlassShine {
+  0% {
+    background-position: calc(var(--char-offset, 0%) + 500%) center;
+  }
+  35% {
+    background-position: calc(var(--char-offset, 0%) - 250%) center;
+  }
+  100% {
+    background-position: calc(var(--char-offset, 0%) - 250%) center;
+  }
+}
+
+.char-glass-shine {
+  background-image: linear-gradient(
+    90deg,
+    #9E745D 0%,
+    #9E745D 42%,
+    #ffffff 50%,
+    #9E745D 58%,
+    #9E745D 100%
+  );
+  background-size: 600% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #9E745D;
+  display: inline-block;
+  animation: charGlassShine 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Infinite Marquee Animations */
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-33.333%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marqueeLeft 28s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marqueeRight 28s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
